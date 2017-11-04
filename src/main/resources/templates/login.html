@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>LACC Login</title>
 </head>
 <body>
 
 <h1>Welcome to the LACC Nomination Portal</h1>
-<p>Username: <input type = "text:" name="username">
-<p>Password: <input type = "text:" name="password" </p>
-<p><form action="nominatorLanding.html">
+<form action="nominatorLanding.html">
+<p>Username: <input type = "text" name="username">
+<p>Password: <input type = "text" name="password"> </p>
+<p>
     <input type = "submit" value="Enter">
 </form></p>
 <p>Not registered? <a href="nominatorRegister.html"> Register here.</a></p>
