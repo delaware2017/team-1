@@ -78,7 +78,6 @@
 <form action="manageNoms.html">
 <input type="submit" value="Submit Application">
 </form>
-<input type="submit" value="Save Progress">
 <form action="manageNoms.html">
 <input type="submit" value="Cancel Appliction">
 </form>

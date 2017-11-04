@@ -52,37 +52,49 @@
     </nav>
 
     <main role="main" class="container">
-	<p>First name: <input type="text" name="fname"></p>
-<p>Last name: <input type="text" name="lname"></p>
-<p>Email: <input type="text" name="email"></p>
-<p>Phone contact: <input type="text" name="phone"></p>
-<p>Relation with Student: <input type="text" name="relation"></p>
-<p><b>Student Nominee Information</b></p>
+	<h1>Student Application</h1>
 <p>First name: <input type="text" name="fname"></p>
 <p>Last name: <input type="text" name="lname"></p>
-<p>School: <input type="text" name="school"></p>
-<p>Grade: <input type="text" name="grade"></p>
-<p>Nomination category: 
+<p>Email: <input type="text" name="email"></p>
+<p>Phone contact:  <input type="text" name="phone"></p>
+<p>Do you consider yourself latino? 
 <select>
-  <option value="Atheltics">Athletics</option>
-<option value="academics">Academics</option>
-<option value="STEM">Science/Technology</option>
-<option value="Arts">Arts</option>
-<option value="community">Community Service/Volunteerism</option>
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
 </select>
+Why? <input type="text" name="reason">
 </p>
-<p>Why did you choose to nominate this student?<b> Please write a reference/recommendation letter in less than 1000 words.</b></p>
-<p><textarea rows="20" cols="40">Please enter/paste reponse here.</textarea>
-</p>
+<p>Award Categories: Select all the apply</p>
 <p>
-<form action="manageNoms.html">
-<input type="submit" value="Submit Application">
-</form>
-<input type="submit" value="Save Progress">
-<form action="manageNoms.html">
-<input type="submit" value="Cancel Appliction">
+<input type="checkbox" name="award" value="Athletics">Athletics
+<input type="checkbox" name="award" value="Science/Technology">Science/Technology
+<input type="checkbox" name="award" value="Arts">Arts
+<input type="checkbox" name="award" value="Community Service">Community Service/Volunteerism
+</p>
+
+<hr>
+
+<p><b>Personal Statement</b></p>
+<p>All applicants, regardless of nomination category, are required to respond to one of the following essays.<b> The response is limited to 7500 characters.</b> Criteria for judging the statements include:
+</p>
+<p>- Grammar, Spelling, Sentence Structure</p>
+<p>- Clear theme or topic</p>
+<p>- Supporting details</p>
+<p>- Personal or People Impact</p>
+<p>- Effective use of words</p>
+<p>- Organization of thoughts</p>
+<p>- Relevant Content and Examples</p>
+<p>- Strong introduction and conclusion</p>
+<p>
+  <textarea rows="20" cols="70"> Please enter/paste essay here.</textarea>
+
+<form action="manageNoms_2.html">
+<p><input type = "submit" value="Submit Application"></p>
 </form>
 
+<form action="manageNoms_2.html">
+<p><input type = "submit" value="Cancel Application"></p>
+</form>
     </main><!-- /.container -->
 
 
