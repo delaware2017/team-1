@@ -53,11 +53,12 @@
 
 Please select a nomination to delete:
  <select>
-  <option value="test value">
+   <option class="item1" value="test value">Gause, Ben</option>
+   <option class="item2" value="test value">Baha, Brian</option>
 </select>
 </p>
 
-<p><input type="submit" value="Delete"></p>
+<p><input class="delButton" type="submit" value="Delete"></p>
 <p><a href="manageNoms_2.html">Back to Manage Nominations</a></p>
 
 
@@ -71,6 +72,11 @@ Please select a nomination to delete:
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="Starter%20Template%20for%20Bootstrap_files/popper.js"></script>
     <script src="Starter%20Template%20for%20Bootstrap_files/bootstrap.js"></script>
+    <script>
+      $('delButton').click(function(){
+      $('item1').innerHTML() = "";
+      });
+      </script>
   
 
 </body></html>
