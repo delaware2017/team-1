@@ -22,3 +22,6 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+### Remove DS_Store ###
+.DS_Store
