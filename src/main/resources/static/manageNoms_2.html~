@@ -33,7 +33,7 @@
             <a class="nav-link" href="studentApp_2.html">Student Application</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://www.thelatincenter.org/">LACC Website</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="http://example.com/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
