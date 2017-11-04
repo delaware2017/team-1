@@ -1,8 +1,11 @@
 package com.adeveloperdiry;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class User {
-    
+    @Id
     private Integer id;
 
     private String name;
@@ -33,5 +36,18 @@ public class User {
 		this.email = email;
 	}
 
-
+	@Override
+	public boolean equals(Object obj) {
+		final User u = (User) obj;
+		if(this.id != u.id) {
+			return false;
+		} else if(this.name != u.name) {
+			return false;
+		} else if(this.email != u.email) {
+			return false;
+		} else {
+			return true;
+		}
+		
+	}
 }
