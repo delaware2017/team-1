@@ -1,18 +1,15 @@
 package com.adeveloperdiry;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
 public class DemoApplicationTests {
 	
 	@Autowired
-	UserRepository repo;
+	ImpUserRepository repo = new ImpUserRepository();
 	
 	@Before
 	public void before(){
@@ -23,12 +20,21 @@ public class DemoApplicationTests {
 	public void contextLoads() {
 	}
 	
+	// Demonstrates a mock database
 	@Test
 	public void testRepo(){
+		// Setup
+		User correct = new User();
+		correct.setEmail("uuu@udel.edu");
+		correct.setId(1);
+		correct.setName("Jonathan");
 		
-//			repo.findAll();
-			
+		// Perform
+		repo.save(correct);
 		
+		// Assert
+		User user = repo.findOne(correct.getId());
+		assertEquals(correct, user);
 	}
 
 }
