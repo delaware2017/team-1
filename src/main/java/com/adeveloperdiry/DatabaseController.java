@@ -17,6 +17,7 @@ public class DatabaseController {
 	@GetMapping(path="/add")
 	public @ResponseBody String addNewUser(@RequestParam String name,
 			 @RequestParam String email) {
-		return name + email;
+//		return userRepository.findAll().toString();
+		return null;
 	}
 }

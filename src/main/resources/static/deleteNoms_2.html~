@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <title>Add A Nominee</title>
+    <title>Delete a Nomination</title>
 
     <!-- Bootstrap core CSS -->
     <link href="Starter%20Template%20for%20Bootstrap_files/bootstrap.css" rel="stylesheet">
@@ -51,37 +51,15 @@
       </div>
     </nav>
 
-    <main role="main" class="container">
-	<p>First name: <input type="text" name="fname"></p>
-<p>Last name: <input type="text" name="lname"></p>
-<p>Email: <input type="text" name="email"></p>
-<p>Phone contact: <input type="text" name="phone"></p>
-<p>Relation with Student: <input type="text" name="relation"></p>
-<p><b>Student Nominee Information</b></p>
-<p>First name: <input type="text" name="fname"></p>
-<p>Last name: <input type="text" name="lname"></p>
-<p>School: <input type="text" name="school"></p>
-<p>Grade: <input type="text" name="grade"></p>
-<p>Nomination category: 
-<select>
-  <option value="Atheltics">Athletics</option>
-<option value="academics">Academics</option>
-<option value="STEM">Science/Technology</option>
-<option value="Arts">Arts</option>
-<option value="community">Community Service/Volunteerism</option>
+Please select a nomination to delete:
+ <select>
+  <option value="test value">
 </select>
 </p>
-<p>Why did you choose to nominate this student?<b> Please write a reference/recommendation letter in less than 1000 words.</b></p>
-<p><textarea rows="20" cols="40">Please enter/paste reponse here.</textarea>
-</p>
-<p>
-<form action="manageNoms_2.html">
-<input type="submit" value="Submit Application">
-</form>
-<input type="submit" value="Save Progress">
-<form action="manageNoms_23.html">
-<input type="submit" value="Cancel Appliction">
-</form>
+
+<p><input type="submit" value="Delete"></p>
+<p><a href="manageNoms.html">Back to Manage Nominations</a></p>
+
 
     </main><!-- /.container -->
 

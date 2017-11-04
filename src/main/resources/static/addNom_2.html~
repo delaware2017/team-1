@@ -75,11 +75,11 @@
 <p><textarea rows="20" cols="40">Please enter/paste reponse here.</textarea>
 </p>
 <p>
-<form action="manageNoms_2.html">
+<form action="manageNoms.html">
 <input type="submit" value="Submit Application">
 </form>
 <input type="submit" value="Save Progress">
-<form action="manageNoms_23.html">
+<form action="manageNoms.html">
 <input type="submit" value="Cancel Appliction">
 </form>
 
